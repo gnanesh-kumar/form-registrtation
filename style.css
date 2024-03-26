@@ -1,6 +1,7 @@
 body{
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-attachment: fixed;
     font-family: 'poppins',sans-serif;
     margin: 0;
 }
@@ -15,7 +16,7 @@ h1{
     text-align: center;
     color: blueviolet;
 }
-button{
+#form button{
     background-color: blueviolet;
     color: white;
     font-size: 20px;
@@ -24,6 +25,7 @@ button{
     width: 100%;
     cursor: pointer;
     padding: 10px;
+    margin: 20px 0px;
 }
 .input-group{
     display: flex;
@@ -33,4 +35,19 @@ button{
 .input-group input{
     border-radius: 5px;
     border: 1px solid pink;
+    padding: 20px;
+}
+.input-group input:focus{
+    outline: 0;
+}
+.error{
+    color: red;
+    margin-top: 5px;
+    font-size: 16px;
+}
+.input-group .success input{
+    background-color: green;
+}
+.input-group .error input{
+    background-color: red;
 }
